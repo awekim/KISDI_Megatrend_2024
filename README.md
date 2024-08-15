@@ -1,0 +1,1 @@
+# KISDI_Megatrend_2024
