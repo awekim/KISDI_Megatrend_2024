@@ -1,0 +1,40 @@
+- Open wsl terminal and run following code
+* ¶ is not easliy recognized in R
+* change directory if necessary
+
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(Abstract)'/Abstract.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(AdministrativeProcess)'/AdministrativeProcess.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(Bibliographic)'/Bibliographic.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(CPC)'/CPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(DesignatedCountry)'/DesignatedCountry.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(Family)'/Family.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(IPC)'/IPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(Priority)'/Priority.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(PriorTechnologyDocument)'/PriorTechnologyDocument.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(RelatedPerson)'/RelatedPerson.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_KR_Patent/'BACK~20221231(Rnd)'/Rnd.txt
+
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_ABSTRACT)'/JP_ABSTRACT.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_BIBLIO)'/JP_BIBLIO.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_CTLTR)'/JP_CTLTR.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_EPC)'/JP_EPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_FAMILY)'/JP_FAMILY.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_FI)'/JP_FI.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_FTERM)'/JP_FTERM.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_IPC)'/JP_IPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_PRIR)'/JP_PRIR.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_REL_PSN)'/JP_REL_PSN.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_JP_Patent/'back~20211231(JP_TEMA)'/JP_TEMA.txt
+
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_ABSTRACT)'/US_ABSTRACT.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_BIBLIO)'/US_BIBLIO.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_CPC)'/US_CPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_CTLTR_ETC)'/US_CTLTR_ETC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_IPC)'/US_IPC.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_PRIR)'/US_PRIR.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_REL_APPL)'/US_REL_APPL.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_REL_PSN)'/US_REL_PSN.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_SEARCH)'/US_SEARCH.txt
+sed -i 's/¶/@/g' /mnt/d/Downloads/KIPRIS_2024/KIPRIS_US_Patent/'BACK~20221231(US_UPC)'/US_UPC.txt
+
+# EP uses ^|& as separator
