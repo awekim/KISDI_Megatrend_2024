@@ -1,6 +1,6 @@
 #######################################################################
 ##  Made by: Dr. Keungoui Kim
-##  Title: KISDI Megatrend Project - Data Prep 01. Data Conversion
+##  Title: KISDI Megatrend Project - Data Prep 03. EDA
 ##  goal : Megatrend Tech Analysis
 ##  Data set: KIPRIS
 ##  Time Span: 
@@ -512,12 +512,14 @@ net <- graph.data.frame(res_graph_data %>%
                         directed = FALSE)
 
 # 노드 정보 추가 (Id를 사용하여 라벨과 색상 설정)
-V(net)$label <- ifelse(V(net)$name %in% res_node_info$Id, 
-                       res_node_info$display_name[match(V(net)$name, res_node_info$Id)], 
-                       V(net)$name)
-V(net)$color <- ifelse(V(net)$name %in% res_node_info$Id, 
-                       res_node_info$color[match(V(net)$name, res_node_info$Id)], 
-                       "grey")
+V(net)$label <- 
+  ifelse(V(net)$name %in% res_node_info$Id, 
+         res_node_info$display_name[match(V(net)$name, res_node_info$Id)], 
+         V(net)$name)
+V(net)$color <- 
+  ifelse(V(net)$name %in% res_node_info$Id, 
+         res_node_info$color[match(V(net)$name, res_node_info$Id)], 
+         "grey")
 
 # 그래프 시각화
 ggnet2(net, size = "degree", color = "color", label = FALSE, 

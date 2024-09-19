@@ -1,6 +1,6 @@
 #######################################################################
 ##  Made by: Dr. Keungoui Kim
-##  Title: KISDI Megatrend Project - Data Prep 01. Data Conversion
+##  Title: KISDI Megatrend Project - Data Prep 02. Data Conversion
 ##  goal : Megatrend Tech Analysis
 ##  Data set: KIPRIS
 ##  Time Span: 
@@ -17,7 +17,7 @@ library(dplyr)
 library(readr)
 
 ### Set directory path
-directory.path <- "D:/downloads/KIPRIS_2024/" # Absolute path where you can find the KIPRIS patent set
+directory.path <- "E:/KIPRIS_2024/" # Absolute path where you can find the KIPRIS patent set
 directory.path <- "/Volumes/awe_passport/KIPRIS_2024/" # Absolute path where you can find the KIPRIS patent set
 
 ### Set country code
