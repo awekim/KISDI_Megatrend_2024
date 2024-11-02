@@ -1,6 +1,8 @@
 # KISDI_Megatrend_2024
-
+### Made by: Changjun Lee, Junmin Lee, Keungoui Kim
 This repository contains codes used for KISDI's Megatrend Project (2024)
+
+
 
 - 01_Separeator_fix: Linux code for refining KIPRIS patent data (fixing separator
 - 02_KIPRIS_DataConversion.R: R code for converting KIPRIS .txt file to .RData
