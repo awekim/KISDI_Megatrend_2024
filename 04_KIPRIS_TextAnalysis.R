@@ -19,12 +19,18 @@ load(file="R file/cpc.trend.all.RData")
 
 country.code <- 'KR'
 
-### Abstract
-load(file=paste0("R file/",country.code,"/Abstract.RData"))
-
 ### Priority
 load(file=paste0("R file/",country.code,"/Priority.RData"))
 Priority$Year <- substr(Priority$우선권주장출원일자,1,4)
+
+### Bibliographic
+load(file=paste0("R file/",country.code,"/Bibliographic.RData"))
+Bibliographic <- Bibliographic[,is.na(names(Bibliographic))==FALSE]
+Bibliographic$Year <- substr(Bibliographic$출원일자, 1, 4)
+table(Bibliographic$Year)
+
+### Abstract
+load(file=paste0("R file/",country.code,"/Abstract.RData"))
 
 # remove NA columns
 Abstract <- Abstract[,is.na(names(Abstract))==FALSE]
@@ -54,8 +60,8 @@ Abstract$초록 <-
 
 Abstract.trend <- cpc.trend.all %>% select(출원번호,type) %>% unique %>% 
   left_join(Abstract) %>%
-  left_join(Priority %>% select(출원번호,Year) %>% unique)
-rm(Priority)
+  left_join(Bibliographic %>% select(출원번호,Year) %>% unique)
+rm(Bibliographic)
 
 Abstract.trend$Year %>% table
 length(unique(Abstract.trend$출원번호)) # 13,064
